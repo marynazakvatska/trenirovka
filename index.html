@@ -12,9 +12,9 @@
 
 
         <a class="open_modal_button" href="#open" data-modal-open>Открыть окно</a>
-        <div class="overlay_modal_card " >
+        <div class="backdrop js-backdrop" >
 
-        <div class="modal is-hidden" data-modal>
+        <div class="modal" >
             <div class="close_modal_movie_card" data-modal-close>
                 <svg class="modal__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path
@@ -25,11 +25,24 @@
                 <img src="./images/phone.jpg" alt="phonesize_image_movie" class="image_movie_card">
                 <div class="movie_card_info">
                     <h1>A FISTFUL OF LEAD</h1>
-                    <div>
-                               <p>Vote / Votes</p> <p>number/number</p>
-                    <p>Popularity</p> <p>{popularity}</p>
-                    <p>Original Title</p> <p>{Original Title}</p>
-                    <p>Genre</p> <p>{genre name}</p>
+                    <div class="rates_info_card_movie">
+
+        <div class="rates_info_card_movie_titles">
+            <p>Vote / Votes</p> 
+                    <p>Popularity</p> 
+                    <p>Original Title</p> 
+                    <p>Genre</p> 
+
+        </div>
+                    
+<div class="rates_info_card_movie_datas">
+    <p>number/number</p>
+                    <p>{popularity}</p>
+                    <p>{Original Title}</p>
+                    <p>{genre name}</p>
+</div>
+                    
+
                     </div>
                   
                     <h2>About</h2>
@@ -49,7 +62,7 @@
                 </div>
         </div>
         </div>
-       <!--  <div class="overlay_modal_card" id="overlay-modal"></div> -->
+  
        <script src="./js/script.js"></script>
     </body>
     </html>
