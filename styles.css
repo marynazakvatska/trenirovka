@@ -1,0 +1,132 @@
+.open_modal_button {
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #414b52;
+    margin: 10px;
+    color: #fff;
+    border-radius: 3px;
+
+}
+
+ @media screen and (min-width: 320px)  {
+    .modal {
+            display: block;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            overflow: hidden;
+            padding: 48px 20px;
+            margin-top: 20px;
+               width: 280px;
+               /*  max-width: 100%; */
+            z-index: 200;
+            background-color: #fff;
+        }
+ }
+
+ @media screen and (min-width: 768px) {
+     .modal {
+
+         padding: 40px 72px 40px 36px;
+        margin-top: 219px;
+        width: 704px;
+
+       
+     }
+ }
+
+  @media screen and (min-width: 1024px) {
+      .modal {
+     
+            margin-top: 150px;
+          padding: 40px 12px;
+          width: 806px;
+
+
+      }
+  }
+
+
+  @media screen and (min-width: 768px) {
+  .modal_txt {
+display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  }
+
+
+ @media screen and (min-width: 320px) {
+.image_movie_card {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+ }
+
+  @media screen and (min-width: 768px) {
+      .image_movie_card {
+        display: flex;
+        margin-left: 0;
+margin-right: 36px;
+        width: 264px;
+            
+      }
+  }
+
+  @media screen and (min-width: 1024px) {
+            .image_movie_card {
+               margin-right: 16px;
+                width: 375px;
+    
+            }
+        }
+
+
+.close_modal_movie_card {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+.overlay_modal_card{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+background-color: rgba(0, 0, 0, 0.3);
+   /*  opacity: 0.25; */
+        z-index: -1;
+}
+
+.button_card_add,
+.button_card_queue {
+    padding: 20px;
+        display: inline-block;
+        text-decoration: none;
+        background-color: #414b52;
+        margin: 10px;
+        color: #fff;
+        border-radius: 3px;
+}
+
+.button_card_add:hover,
+.button_card_queue:hover,
+.button_card_add:focus,
+.button_card_queue:focus  {
+    background-color: #FF6B01;
+}
+.phonesize_image_movie {
+    display: block;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
